@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>📋 TaskFlow</h1>
+        <p>Manage your tasks easily</p>
+    </header>
+
+    <!-- Add Task Form -->
+    <section class="add-task">
+        <h2>Add New Task</h2>
+
+        <form>
+            <input type="text" placeholder="Enter your task">
+
+            <select>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <button type="button">+ Add Task</button>
+        </form>
+    </section>
+
+    <!-- Kanban Board -->
+    <main class="board">
+
+        <!-- To Do Column -->
+        <section class="column">
+            <h2>📝 To Do <span>(2)</span></h2>
+
+            <article class="task-card">
+                <h3>Learn HTML</h3>
+                <span class="priority priority-high">High</span>
+                <p>Due: Nov 10, 2026</p>
+            </article>
+
+            <article class="task-card">
+                <h3>Practice CSS</h3>
+                <span class="priority priority-medium">Medium</span>
+                <p>Due: Nov 12, 2026</p>
+            </article>
+        </section>
+
+        <!-- In Progress Column -->
+        <section class="column">
+            <h2>⚙️ In Progress <span>(2)</span></h2>
+
+            <article class="task-card">
+                <h3>Create Portfolio</h3>
+                <span class="priority priority-high">High</span>
+                <p>Due: Nov 15, 2026</p>
+            </article>
+
+            <article class="task-card">
+                <h3>Learn Flexbox</h3>
+                <span class="priority priority-low">Low</span>
+                <p>Due: Nov 17, 2026</p>
+            </article>
+        </section>
+
+        <!-- Done Column -->
+        <section class="column">
+            <h2>✅ Done <span>(2)</span></h2>
+
+            <article class="task-card">
+                <h3>Install VS Code</h3>
+                <span class="priority priority-low">Low</span>
+                <p>Due: Nov 08, 2026</p>
+            </article>
+
+            <article class="task-card">
+                <h3>Create Project Folder</h3>
+                <span class="priority priority-medium">Medium</span>
+                <p>Due: Nov 08, 2026</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TaskFlow | Built by Kavitha</p>
+    </footer>
+
+</body>
+</html>
